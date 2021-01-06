@@ -109,7 +109,7 @@ class DolibarrClient:
 
         return self.call(method="POST", endpoint="login", body=credentials)
 
-    def invoices(self, params: Optional[dict] = None):
+    def invoices(self, params: Optional[dict] = None) -> dict:
         """
         Gets the list of invoices from dolibarr API.
 
@@ -118,3 +118,13 @@ class DolibarrClient:
         params: dict -> list of filtering parameters.
         """
         return self.call(endpoint='invoices', params=params)
+
+    def third_parties(self, params: Optional[dict] = None) -> dict:
+        """
+        Gets the list of third parties from dolibarr API.
+
+        Params:
+        --------------------------------------------
+        params: dict -> list of filtering parameters.
+        """
+        return self.call(endpoint="thirdparties", params=params)
