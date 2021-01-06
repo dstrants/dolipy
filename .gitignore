@@ -3,3 +3,5 @@ debug.py
 venv/
 .env
 dolipy/sample.json
+
+dist/
