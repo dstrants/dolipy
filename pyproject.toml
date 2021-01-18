@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dolipy"
-version = "0.1.1"
+version = "0.1.2"
 description = "A simple wrapper for dolibarr api"
 authors = ["Dimitrios Strantsalis <dstrants@gmail.com>"]
 
