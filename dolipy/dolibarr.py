@@ -78,7 +78,8 @@ class DolibarrClient:
         headers = {}
         if not endpoint == 'login':
             headers = {
-                'DOLAPIKEY': self.api_key
+                'DOLAPIKEY': self.api_key,
+                'Accept': 'application/json'
             }
 
         response = requests.request(
